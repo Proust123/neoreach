@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin : 0;
+            padding : 0;
+            box-sizing: border-box;
+        }
+
+        .section1{
+            height : 100vh;
+            width : 100%;
+            border : 1px solid;
+            padding : 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sec1_slider{
+            height : 200px;
+            width : 50%;
+            /* border : 1px solid; */
+            padding : 1px;
+            overflow: hidden;
+            /* display: flex; */
+        }
+        .sec1slider_box{
+            height : 100%;
+            width : 200%;
+            /* border : 1px solid ; */
+            display: flex;
+            animation-name: slider;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes slider {
+            0%{
+                margin-left: 0%;
+            }
+            100%{
+                margin-left: 100%;
+            }            
+        }
+        .slide1{
+            height : 100%;
+            width  : 50%;
+            /* border : 1px solid; */
+            display: flex;
+            justify-content: space-around;
+        }
+        .slide2{
+            height : 100%;
+            width  : 50%;
+            /* border : 1px solid; */
+            display: flex;
+            justify-content: space-around;
+        }
+        .sec1slider_pic1{
+            height : 100%;
+            width : 20%;
+            /* border : 1px solid red; */
+            padding: 1px;
+        }
+            /* animation-name: firsttext;
+            animation-duration: 9s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes firsttext {
+            0%{
+                opacity: 1;
+            }
+            33%{
+                opacity: 1;
+            }
+            34%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 0;
+            }
+        } */
+        .sec1slider_pic2{
+            height : 100%;
+            width : 20%;
+            /* border : 1px solid yellow;  */
+            padding: 1px;
+        }
+            /* animation-name: secondtext;
+            animation-duration: 9s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes secondtext {
+            0%{
+                opacity: 0;
+            }
+            33%{
+                opacity: 0;
+            }
+            34%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 1;
+            }
+        } */
+        .sec1slider_pic3{
+            height : 100%;
+            width : 20%;
+            /* border : 1px solid yellowgreen;  */
+            padding: 1px;
+        }
+        .sec1slider_pic4{
+            height : 100%;
+            width : 20%;
+            /* border : 1px solid purple;  */
+            padding: 1px;
+        }
+        .sec1slider_pic5{
+            height : 100%;
+            width : 20%;
+            /* border : 1px solid seagreen;  */
+            padding: 1px;
+        }
+        .sec1slider_pic4{
+            height : 100%;
+            width : 20%;
+            /* border : 1px solid aqua;  */
+            padding: 1px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class = "section1">
+        <div class = "sec1_slider">
+            <div class = "sec1slider_box">
+                <div class = "slide1">
+                    <div class = "sec1slider_pic1">
+                        <img src="./images/card-boy@2x.png" height = "100%" width = "100%" alt="">
+                    </div>
+                    <div class = "sec1slider_pic2">
+                        <img src="./images/card-girl@2x.png" height = "100%" width = "100%" alt="">
+                    </div>
+                    <div class = "sec1slider_pic3">
+                        <img src="./images/card-boy@2x.png" height = "100%" width = "100%" alt="">
+                    </div>
+                </div>
+                <div class = "slide2">
+                    <div class = "sec1slider_pic4">
+                        <img src="./images/card-girl@2x.png" height = "100%" width = "100%" alt="">
+                    </div>
+                    <div class = "sec1slider_pic5">
+                        <img src="./images/card-boy@2x.png" height = "100%" width = "100%" alt="">
+                    </div>
+                    <div class = "sec1slider_pic6">
+                        <img src="./images/card-girl@2x.png" height = "100%" width = "100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

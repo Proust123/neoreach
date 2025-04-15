@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        *{
+            margin : 0;
+            padding : 0;
+            box-sizing: border-box;
+        }
+        .section1{
+            height : 100vh;
+            width : 100%;
+            border : 1px solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .sec1_navbar{
+            height : 80px;
+            width : 100%;
+            border : 3px solid yellow
+        }
+        .sec1_content{
+            height : 70%;
+            width : 90%;
+            border : 1px solid red;
+            display: flex;
+            /* margin-top: 100px; */
+        }
+        .sec1con_leftbox{
+            height : 100%;
+            width : 32%;
+            border : 1px solid yellowgreen
+        }
+        .sec1con_ritebox{
+            height : 100%;
+            width : 68%;
+            border : 1px solid;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: relative;
+        }
+        .slider{
+            height : 40%;
+            width : 60%;
+            /* border : 1px solid; */
+            position: absolute;
+            bottom : 10%;
+            left  : 18%;
+            z-index: -100;
+            overflow: hidden;
+        }
+        .sliderbox{
+            height : 100%;
+            width : 180%;
+            /* border : 2px solid red; */
+            display: flex;
+            justify-content: space-between;
+            animation-name: slider1;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes slider1 {
+            0%{
+                margin-left: -98%;
+            }
+            100%{
+                margin-left: 0%;
+            }
+        }
+        .graph_up{
+            height : 23px;
+            width : 6.5%;
+            border : 1px solid green;
+            position: absolute;
+            top :  33%;
+            left : 61%;
+            
+        }
+        @keyframes graph {
+            0%{
+                width : 0
+            }
+            100%{
+                width : 6.2%;
+            }
+        }
+        .graph_img{
+            height : 23px;
+            width : 62px;
+            margin-left: -5px;
+            animation-name: graph;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class = "section1">
+        <nav class = "sec1_navbar"></nav>
+        <div class = "sec1_content">
+            <div class = "sec1con_leftbox"></div>
+            <div class = "sec1con_ritebox">
+                <img class = "hero1" src="./images/hero-base1@2x.png"  height = "70%" alt="">
+                <img class = "hero1" src="./images/hero-base2@2x.png"   height = "70%" alt="">
+                <div class = "slider">
+                    <div class = "sliderbox">
+                        <img src="./images/card-boy@2x.png" height = "60%" alt="">
+                        <img src="./images/card-girl@2x.png" height = "60%" alt="">
+                        <img src="./images/card-boy@2x.png" height = "60%" alt="">
+                        <img src="./images/card-girl@2x.png" height = "60%" alt="">
+                        <img src="./images/card-girl@2x.png" height = "60%" alt="">
+                        <img src="./images/card-boy@2x.png" height = "60%" alt="">
+                    </div>
+                </div>
+                <div class = "graph_up">
+                    <img class = "graph_img" src="./images/graph-up.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
